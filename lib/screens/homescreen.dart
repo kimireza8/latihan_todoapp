@@ -30,6 +30,12 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  void _deleteTodo(String id) {
+    setState(() {
+      _todos.removeWhere((todo) => todo.id == id);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 return TodoItem(
                   todo: todo,
                   onToggle: _toggleTodoCompletion,
+                  onDelete: _deleteTodo,
                 );
               },
             ),
