@@ -1,6 +1,6 @@
 name: latihan_todoapp
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  uuid: ^3.0.7
 
 dev_dependencies:
   flutter_test:
